@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Declass / Get</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Declass" name="twitter:title" />
+    <meta property="og:site_name" content="Declass" />
+    <meta
+      content="Follow our step-by-step guide on how to install Declass onto your site with one line of code."
+      name="description"
+    />
+    <meta
+      content="Follow our step-by-step guide on how to install Declass onto your site with one line of code."
+      name="twitter:description"
+      property="og:description"
+    />
+    <meta
+      property="og:url"
+      content="https://declass.netlify.app/get"
+      name="twitter:url"
+    />
+    <meta
+      property="og:image"
+      content="https://declass.netlify.app/images/logo.png"
+      name="twitter:image"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="/css/declass.min.css" />
+    <link rel="stylesheet" href="/css/turbolinks.css" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"
+      defer
+    ></script>
+  </head>
+  <body style="--color:var(--redorange);">
+    <nav>
+      <button>
+        <a href="/">D</a>
+      </button>
+      <button>
+        <a href="/docs">Docs</a>
+      </button>
+      <button>
+        <a href="/#about">About</a>
+      </button>
+      <button disabled>
+        <a href="/get">Get</a>
+      </button>
+    </nav>
+    <aside>
+      <center>
+        <h2>
+          Navigation
+        </h2>
+      </center>
+      <details
+        ><summary>Steps</summary>
+        <ol>
+          <a onclick="scrollto(1)"><li>Include the required tags</li></a>
+          <a onclick="scrollto(2)"><li>Get the code</li></a>
+          <a onclick="scrollto(3)"><li>Read the docs</li></a>
+        </ol></details
+      >
+    </aside>
+    <main>
+      <h1>
+        Get Declass
+      </h1>
+      <p>
+        Follow our step-by-step guide on how to install Declass onto your site
+        with one line of code.
+      </p>
+      <hr />
+      <h2 id="1">
+        Step 1: Include the required tags
+      </h2>
+      <p>
+        Before you add Declass to your site, it's highly recommended to add this
+        tag before your HTML page to render elements consistently on less
+        advanced browsers:
+      </p>
+      <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+      <p>
+        and this <code>&lt;meta&gt;</code> tag so that your site works on mobile
+        and turns it into a truly responsive one:
+      </p>
+      <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+      <hr />
+      <h2 id="2">
+        Step 2: Get the code
+      </h2>
+      <p>
+        There are two ways to include our script. The first way is to include
+        our stylesheet between the <code>&lt;head&gt;</code> tags of your page
+        by pasting the following line of code:
+      </p>
+      <pre><code>&lt;link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css"&gt;</code></pre>
+      <button onclick="copy()">Copy</button>
+      <p>
+        The second way is to download our code, upload it to the root section of
+        your page, and include it in the same format above.
+      </p>
+      <a href="/css/declass.min.css" download="declass.min.css"
+        ><button>
+          Download
+        </button></a
+      >
+      <div>
+        <h2>
+          Warning
+        </h2>
+        <p>
+          Choosing the second method (Download) will not update your script.
+        </p>
+      </div>
+      <hr />
+      <h2 id="3">
+        Step 3: Read the docs
+      </h2>
+      <p>
+        To understand how to use Declass on your site, read the Documentation.
+        It has simple information about the features Declass has and even a
+        <a href="/docs/dark-mode">tutorial</a> about how to add dark mode to
+        your site. All in all, remember to read the docs!
+      </p>
+      <a href="/docs"
+        ><button>
+          Check it out
+        </button></a
+      >
+    </main>
+    <footer>
+      <h1>
+        Declass
+      </h1>
+      <details
+        ><summary>Pages</summary>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/docs"><li>Docs</li></a>
+          <a href="/about"><li>About</li></a>
+          <a href="/get"><li>Get</li></a>
+        </ul></details
+      >
+      <details
+        ><summary>More</summary>
+        <ul>
+          <a href="/"><li>Github</li></a>
+        </ul></details
+      >
+      <hr />
+      <h3>
+        <a href="https://opensource.org/licenses/MIT">Copyright</a> @DerDer56
+        <span id="year">....</span>
+      </h3>
+    </footer>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url = /js" />
+    </noscript>
+    <script src="/js/index.js"></script>
+    <script src="/js/toggle.js"></script>
+    <script src="/js/year.js"></script>
+  </body>
+</html>
