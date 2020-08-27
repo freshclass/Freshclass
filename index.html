@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Declass</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Declass" name="twitter:title" />
+    <meta property="og:site_name" content="Declass" />
+    <meta
+      content="CSS Frameworks, reimagined. Declass makes it easy to design a quick new webpage or add styling to a
+      major project."
+      name="description"
+    />
+    <meta
+      content="CSS Frameworks, reimagined. Declass makes it easy to design a quick new webpage or add styling to a
+      major project."
+      name="twitter:description"
+      property="og:description"
+    />
+    <!--
+    <meta
+      property="og:url"
+      content="https://defresh.js.org/"
+      name="twitter:url"
+    />
+    <meta
+      property="og:image"
+      content="https://defresh.js.org/logo.png"
+      name="twitter:image"
+    />
+    -->
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="/css/1.min.css" />
+    <link rel="stylesheet" href="/css/turbolinks.css" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"
+      defer
+    ></script>
+  </head>
+  <body style="--color:var(--redorange);">
+    <nav>
+      <button disabled>
+        <a href="/">D</a>
+      </button>
+      <button>
+        <a href="/docs">Docs</a>
+      </button>
+      <button onclick="about()">
+        <a>
+          About
+        </a>
+      </button>
+      <button>
+        <a href="/get">Get</a>
+      </button>
+    </nav>
+    <header>
+      <center>
+        <hgroup>
+          <h1>Declass</h1>
+          <h3>CSS Frameworks, Reimagined.</h3>
+        </hgroup>
+        <a href="/docs">
+          <button>Docs</button>
+        </a>
+        <a onclick="about()">
+          <button>About</button>
+        </a>
+        <a href="/get">
+          <button>Get Version 1</button>
+        </a>
+      </center>
+    </header>
+    <div>
+      <h1>
+        Warning
+      </h1>
+      <p>
+        Declass 1 is still unreleased, so remember to wait for us to finish it
+        before starting to use it on your site. We are still adding info to the
+        docs and updating our code. Have a great day! :)
+      </p>
+      <br /><a
+        ><button onclick="about()">
+          Skip
+        </button></a
+      >
+    </div>
+    <hr />
+    <h1 id="about">About</h1>
+    <p>
+      Declass makes it easy to design a quick new webpage or add styling to a
+      major project. Whether you need a good-looking blog, a simple personal
+      site, or a stylish educational page, Declass' dynamic design will turn the
+      major task of making your page responsive into a simple job. Just copy the
+      code to our free-to-use stylesheet and and paste it between the
+      <code>&lt;head&gt;</code> tags on your site:
+    </p>
+    <br />
+    <pre><code>&lt;link rel="stylesheet" href="https://declass.glitch.me/css/1.min.css"&gt;</code></pre>
+    <button onclick="copy()">Copy</button>
+    <hr />
+    <h2>
+      How it works
+    </h2>
+    <p>
+      But how does it work so well? It's a <em>CSS Framework</em>, which is a
+      CSS file that gives you easy templates for designing an amazing site. But
+      unlike other frameworks such as
+      <a href="https://getbootstrap.com">Bootstrap</a>, Declass controls your
+      site's look based on tags, not classnames. What does that mean? It means
+      that instead of having to bombard your site with
+      <code>class</code> attributes, you just write the HTML and we make it
+      beautiful for you. Styling simplified. Because as the saying goes,
+    </p>
+    <blockquote>
+      "Less is more."
+    </blockquote>
+    <hr />
+    <h2>
+      Design
+    </h2>
+    <p>
+      Declass has a simple design with readable and big fonts, lots of space,
+      and distinct style of sharp but smooth edges. It also supports a
+      <a href="/docs/--color"><code>--color</code></a> variable on your page
+      which gives your page a nice flair instead of just black and white.
+      Speaking of black and white, Declass's style supports a dark mode which
+      runs when your user prefers dark mode on their device. If you want to
+      automatically run dark mode or include our toggle button script, info can
+      be found in our <a href="/docs/dark-mode">Documentation</a>.
+    </p>
+    <a href="/docs/design"
+      ><button>
+        More Design Info
+      </button></a
+    >
+    <hr />
+    <h2>Tags</h2>
+    <p>
+      Just how does Declass give you so many options with so little tags? Does
+      it create a new kind of attribute for styling? Does it add more tags? No.
+      The answer is one word: <em>Creativity</em>. Declass lets you combine tags
+      to make objects such as link buttons, centered headings, or preformatted
+      code.
+    </p>
+    <p>
+      Almost all of the tags in HTML5 are supported by Declass. Knowing which
+      tags to use to make a nice and responsive site are crucial, so make sure
+      to check out our docs, which have easy-to-read information and
+      easy-to-follow guides on how to create items such as dropdowns, footers,
+      sidebars, navigation bars, and much more!
+    </p>
+    <a href="/docs"
+      ><button>
+        Start Reading
+      </button></a
+    >
+    <footer>
+      <details
+        ><summary>Sites</summary>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/docs"><li>Docs</li></a>
+          <a href="/about"><li>About</li></a>
+          <a href="/get"><li>Get</li></a>
+        </ul></details
+      >
+      <details
+        ><summary>More</summary>
+        <ul>
+          <a href="/"><li>Github</li></a>
+        </ul></details
+      >
+      <hr />
+      <h3><a href="/about">Copyright</a> @ <span id="year">....</span></h3>
+    </footer>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url = /js" />
+    </noscript>
+    <script src="/js/index.js"></script>
+    <script src="/js/toggle.js"></script>
+    <script src="/js/year.js"></script>
+  </body>
+</html>

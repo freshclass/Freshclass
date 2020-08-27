@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Declass / Turn on Javascript</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="/css/1.min.css" />
+    <link rel="stylesheet" href="/css/turbolinks.css" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"
+      defer
+    ></script>
+  </head>
+  <body style="--color:var(--redorange);">
+    <nav>
+      <button>
+        <a href="/">D</a>
+      </button>
+      <button>
+        <a href="/docs">Docs</a>
+      </button>
+      <button onclick="about()">
+        <a>
+          About
+        </a>
+      </button>
+      <button>
+        <a href="/get">Get</a>
+      </button>
+    </nav>
+    <div>
+      <h1>
+        Turn on Javascript
+      </h1>
+      <p>
+        Javascript makes our site interactive and makes the toggle buttons work.
+        Please take the time to go to your browser settings and enable it. If
+        you aren't sure how, here's a guide on how to do it:
+      </p>
+      <a href="https://www.enable-javascript.com/"
+        ><button>
+          Enable Javascript
+        </button></a
+      >
+    </div>
+    <footer>
+      <details
+        ><summary>Sites</summary>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/docs"><li>Docs</li></a>
+          <a href="/about"><li>About</li></a>
+          <a href="/get"><li>Get</li></a>
+        </ul></details
+      >
+      <hr />
+      <h3><a href="/about">Copyright</a> @ <span id="year">....</span></h3>
+    </footer>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url = /js" />
+    </noscript>
+    <script src="/js/year.js"></script>
+    <script src="/js/toggle.js"></script>
+  </body>
+</html>
