@@ -14,7 +14,7 @@ function copy() {
   document.execCommand("copy");
   document.body.removeChild(e);
 }
-if (location.hash !== null) {
+if (location.hash != null && location.hash != "#") {
   scrollTo(0, 0);
   scrollto(location.hash.replace("#", ""));
 }
