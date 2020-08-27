@@ -1,12 +1,21 @@
 {
-  "main": "app.js",
+  "name": "Declass",
+  "version": "1",
+  "description": "CSS Frameworks, Reimagined. Declass makes it easy to design a quick new webpage or add styling to a major project.",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "engines": {
-    "node": "12.x"
-  }
+    "node": "8.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "framework",
+    "declass"
+  ]
 }
