@@ -3,5 +3,7 @@ fetch("/docs/nav.html")
     return e.text();
   })
   .then(function(e) {
-    document.getElementById("sidebar").innerHTML=e;
+    document.getElementById("sidebar").innerHTML = e
+      .split("-->")[1]
+      .split("<!--")[0];
   });

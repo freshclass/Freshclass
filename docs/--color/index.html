@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="nMtZYo03UbD-B6NeI8uNTcCjWO1IHTysPu1npvEP4DM"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-166680079-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-166680079-3");
+    </script>
+    <title>Declass / Docs / --color</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Declass" name="twitter:title" />
+    <meta property="og:site_name" content="Declass" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/css/declass.min.css" />
+    <link rel="stylesheet" href="/css/turbolinks.css" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"
+      defer
+    ></script>
+  </head>
+  <body style="--color:var(--redorange);">
+    <nav>
+      <button>
+        <a href="/">D</a>
+      </button>
+      <button>
+        <a href="/docs">Docs</a>
+      </button>
+      <button>
+        <a href="/#about">About</a>
+      </button>
+      <button>
+        <a href="/get">Get</a>
+      </button>
+    </nav>
+    <aside id="sidebar">
+      <div>
+        <h2>
+          Loading
+        </h2>
+        <p>
+          We are currently getting information from the server. If no
+          information is shown in the next 5 seconds, please make sure that you
+          are using a fast browser with internet.
+        </p>
+      </div>
+    </aside>
+    <main>
+      <h1><code>--color</code> variable</h1>
+      <p>
+        When you first install Declass, your site will have no color. Below you
+        can see an example of how this site's 404 page looks like this:
+      </p>
+      <img
+        src="/images/no--color.png"
+        loading="lazy"
+        alt="404 page with no color"
+      />
+      <p>
+        Not very good-looking, right? Well, in this tutorial, we will be
+        teaching you how to turn that black-and-white site into something like
+        this, a good looking mix of bright, dark, and vibrant:
+      </p>
+      <img src="/images/color.png" loading="lazy" alt="404 page with color" />
+      <p>
+        But how do you do it? The answer is to add a
+        <code>style</code> attribute to your <code>&lt;body&gt;</code> with a
+        <code>--color</code> variable to it, as such:
+      </p>
+      <pre><code>&lt;body style="--color: red"&gt;
+  &lt;!-- Replace red with the color of your choice --&gt;
+&lt;/body&gt;</code></pre>
+      <a href="/docs/editor?exercise=--color-body"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <p>
+        A prime feature added in version 1 was the addition of a color template.
+        If you want to use one of our special colors, then type one of the codes
+        below as your <code>--color</code>:
+      </p>
+      <details style="--color:var(--black)">
+        <summary>
+          var(--black)
+        </summary>
+        <p>The hex code for this color is <code>#000000</code></p>
+      </details>
+      <details style="--color:var(--red)">
+        <summary>
+          var(--red)
+        </summary>
+        <p>The hex code for this color is <code>#F13939</code></p>
+      </details>
+      <details>
+        <summary>
+          var(--orangered)
+        </summary>
+        <p>The hex code for this color is <code>#F66E3B</code></p>
+      </details>
+      <details style="--color:var(--orange)">
+        <summary>
+          var(--orange)
+        </summary>
+        <p>The hex code for this color is <code>#F19B26</code></p>
+      </details>
+      <details style="--color:var(--orangeyellow)">
+        <summary>
+          var(--orangeyellow)
+        </summary>
+        <p>The hex code for this color is <code>#EDC022</code></p>
+      </details>
+      <details style="--color:var(--yellow)">
+        <summary>
+          var(--yellow)
+        </summary>
+        <p>The hex code for this color is <code>#F3ED1D</code></p>
+      </details>
+      <details style="--color:var(--yellowgreen)">
+        <summary>
+          var(--yellowgreen)
+        </summary>
+        <p>The hex code for this color is <code>#C9F31D</code></p>
+      </details>
+      <details style="--color:var(--green)">
+        <summary>
+          var(--green)
+        </summary>
+        <p>The hex code for this color is <code>#1BC139</code></p>
+      </details>
+      <details style="--color:var(--greenblue)">
+        <summary>
+          var(--greenblue)
+        </summary>
+        <p>The hex code for this color is <code>#1AE18A</code></p>
+      </details>
+      <details style="--color:var(--blue)">
+        <summary>
+          var(--blue)
+        </summary>
+        <p>The hex code for this color is <code>#0C67F2</code></p>
+      </details>
+      <details style="--color:var(--bluepurple)">
+        <summary>
+          var(--bluepurple)
+        </summary>
+        <p>The hex code for this color is <code>#5C0CF2</code></p>
+      </details>
+      <details style="--color:var(--purple)">
+        <summary>
+          var(--purple)
+        </summary>
+        <p>The hex code for this color is <code>#A730F9</code></p>
+      </details>
+      <details style="--color:var(--purplered)">
+        <summary>
+          var(--purplered)
+        </summary>
+        <p>The hex code for this color is <code>#F743BB</code></p>
+      </details>
+      <p>
+        You can also apply the <code>--color</code> variable to other elements,
+        which you will learn about later:
+      </p>
+      <pre><code>&lt;div style="--color: var(--red)"&gt;
+  &lt;h1&gt;
+    Warning
+  &lt;/h1&gt;
+  &lt;p&gt;
+    This text is red, which usually means danger.
+  &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      <a href="/docs/editor?exercise=--color-div"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <a href="/docs"><button>Back</button></a>
+      <a href="/docs/text"><button>Next</button></a>
+    </main>
+    <footer>
+      <h1>
+        Declass
+      </h1>
+      <details
+        ><summary>Pages</summary>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/docs"><li>Docs</li></a>
+          <a href="/about"><li>About</li></a>
+          <a href="/get"><li>Get</li></a>
+        </ul></details
+      >
+      <details
+        ><summary>More</summary>
+        <ul>
+          <a href="/docs/templates"><li>Templates</li></a>
+          <a href="https://github.com/DerDer56/Declass"><li>Github</li></a>
+          <a href="/docs/thanks"><li>Third-Party Services</li></a>
+          <a href="/docs/cookies"><li>Cookies We Use</li></a>
+        </ul></details
+      >
+      <hr />
+      <h3>
+        <a href="https://opensource.org/licenses/MIT">Copyright</a> @DerDer56
+        <span id="year">....</span>
+      </h3>
+    </footer>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url = /js" />
+    </noscript>
+    <script src="/js/toggle.js"></script>
+    <script src="/js/docs.js"></script>
+    <script src="/js/year.js"></script>
+  </body>
+</html>
