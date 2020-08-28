@@ -12,7 +12,11 @@ function scrollto(e) {
 function copy(x) {
   var e = document.createElement("textarea");
   if (x) {
-    e.value = "https://declass.netlify.app" + location.pathname + x;
+    e.value =
+      "https://declass.netlify.app" +
+      location.pathname +
+      (location.pathname.endsWith("/") ? "" : "/") +
+      x;
   } else {
     e.value =
       '<link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">';
