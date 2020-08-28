@@ -3,10 +3,18 @@
   <head>
     <link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">
   </head>
-  <body style="--color: yellow">
-    <div style="--color: red">
+  <body style="--color: red">
+    <div>
       <h1>
-        FUN FACT
+        Hi!
+      </h1>
+      <p>
+        I inherit the specified color
+      </p>
+    </div>
+    <div style="--color: var(--greenblue)">
+      <h1>
+        Hi
       </h1>
       <p>
         I override the specified color

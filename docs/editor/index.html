@@ -42,8 +42,14 @@
         <a href="/get">Get</a>
       </button>
     </nav>
+    <h1>
+      Editor
+    </h1>
     <pre id="pre"><code id="code" contenteditable>Enter code here...
 </code></pre>
+    <button onclick="copy(document.getElementById('code').textContent)">
+      Copy Code
+    </button>
     <button onclick="run()">
       Run Code
     </button>
@@ -81,6 +87,7 @@
     <noscript>
       <meta http-equiv="refresh" content="0; url = /js" />
     </noscript>
+    <script src="/js/index.js"></script>
     <script src="/js/year.js"></script>
     <script src="/js/toggle.js"></script>
     <script src="/js/editor.js"></script>

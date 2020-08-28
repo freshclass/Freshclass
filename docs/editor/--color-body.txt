@@ -5,7 +5,12 @@
   </head>
   <body style="--color: red">
     <div>
-      I inherit the specified color
+      <h1>
+        Hi!
+      </h1>
+      <p>
+        I inherit the specified color
+      </p>
     </div>
   </body>
 </html>

@@ -7,7 +7,12 @@ function write(e) {
   result.close();
 }
 function run() {
-  write(code.innerHTML.replace(/\t\n/g, ""));
+  write(
+    code.innerHTML
+      .replace(/\t\n/g, "")
+      .replace(/\&gt\;/g, ">")
+      .replace(/\&lt\;/g, "<")
+  );
 }
 if (exercise) {
   fetch("/docs/editor/" + exercise + ".txt")
@@ -16,7 +21,7 @@ if (exercise) {
     })
     .then(function(e) {
       code.textContent = e;
-      write(e);
+      write(e.replace(/\t\n/g, ""));
     });
 }
 code.addEventListener("keydown", insertTabAtCaret);

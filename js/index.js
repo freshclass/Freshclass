@@ -11,7 +11,7 @@ function scrollto(e) {
 }
 function copy(x) {
   var e = document.createElement("textarea");
-  if (x) {
+  if (x.startsWith("#")) {
     e.value =
       "https://declass.netlify.app" +
       location.pathname +
@@ -19,7 +19,7 @@ function copy(x) {
       x;
   } else {
     e.value =
-      '<link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">';
+      x;
   }
   document.body.appendChild(e);
   e.select();
