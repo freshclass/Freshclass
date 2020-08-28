@@ -3,7 +3,8 @@
   <head>
     <link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">
   </head>
-  <body style="--color: red">
+  <!-- Try replacing "--red" with other colors that come with Declass -->
+  <body style="--color: var(--red)">
     <div>
       <h1>
         Hi!

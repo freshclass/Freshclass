@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">
   </head>
-  <body style="--color: red">
+  <body style="--color: var(--red)">
     <div>
       <h1>
         Hi!
@@ -22,3 +22,4 @@
     </div>
   </body>
 </html>
+<!-- This is an example of Declass -->
