@@ -5,10 +5,14 @@ function scrollto(e) {
     behavior: "smooth"
   });
 }
-function copy() {
+function copy(x) {
   var e = document.createElement("textarea");
-  e.value =
-    '<link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">';
+  if (x) {
+    e.value = 'https://declass.netlify.app'+location.pathname+x;
+  } else {
+    e.value =
+      '<link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">';
+  }
   document.body.appendChild(e);
   e.select();
   document.execCommand("copy");
