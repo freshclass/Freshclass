@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">
+  </head>
+  <body style="--color: yellow">
+    <div style="--color: red">
+      <h1>
+        FUN FACT
+      </h1>
+      <p>
+        I override the specified color
+      </p>
+    </div>
+  </body>
+</html>

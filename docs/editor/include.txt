@@ -3,9 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://declass.netlify.app/css/declass.min.css">
   </head>
-  <body style="--color: red">
-    <div>
-      I inherit the specified color
-    </div>
+  <body>
+    I now have Declass! Yay!
   </body>
 </html>
