@@ -8,7 +8,7 @@ CSS Frameworks, reimagined. Declass makes it easy to design a quick new webpage 
 
 Pages:
 
-- [Github Repo](https://github.com/DerDer56/Declass)
+- [Github Repo](https://github.com/DerDer56/Declass) (Feel free to open an issue)
 - [Site](https://declass.netlify.app)
 
 ### Copyright @DerDer56 under the [MIT License](https://opensource.org/licenses/MIT)
