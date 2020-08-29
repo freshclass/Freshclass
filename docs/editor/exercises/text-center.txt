@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://declass.netlify.app/css/declass.min.css"
+    />
+  </head>
+  <body>
+    <center>
+      <h1>
+        Centered Text
+      </h1>
+      <p>
+        This text is centered
+      </p>
+    </center>
+  </body>
+</html>
+<!-- This is an example of Declass -->

@@ -4,7 +4,7 @@ function scrollto(e) {
     document.title = "Declass | About";
   }
   scroll({
-    top: document.getElementById(e).getBoundingClientRect().top - 90,
+    top: document.getElementById(e).getBoundingClientRect().top - 100,
     behavior: "smooth"
   });
 }
@@ -26,7 +26,10 @@ function copy(x) {
 }
 if (location.hash) {
   scrollTo(0, 0);
-  setTimeout(function() {
+  onload = function() {
     scrollto(location.hash.replace("#", ""));
-  }, 500);
+  };
 }
+onhashchange = function() {
+  scrollto(location.hash.replace("#", ""));
+};
