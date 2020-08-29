@@ -1,6 +1,7 @@
 var exercise = new URLSearchParams(location.search).get("exercise");
 var code = document.getElementById("code");
-var result = document.getElementById("result").contentWindow.document;
+var iframe = document.getElementById("result");
+var result = iframe.contentWindow.document;
 function write(e) {
   result.open();
   result.write(e);
@@ -46,3 +47,6 @@ function insertTabAtCaret(event) {
     range.setEndAfter(tabNode);
   }
 }
+iframe.onload = function() {
+  iframe.style.height = result.body.scrollHeight+2 + "px";
+};
