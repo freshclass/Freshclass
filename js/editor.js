@@ -36,15 +36,15 @@ if (exercise) {
       }
     });
 }
-code.addEventListener("keydown", insertTabAtCaret);
-function insertTabAtCaret(event) {
-  if (event.keyCode === 9) {
-    event.preventDefault();
-    var range = getSelection().getRangeAt(0);
-    var tabNode = document.createTextNode("\u00a0\u00a0");
-    range.insertNode(tabNode);
-    range.setStartAfter(tabNode);
-    range.setEndAfter(tabNode);
+code.addEventListener("keydown", tab);
+function tab(e) {
+  if (e.keyCode === 9) {
+    e.preventDefault();
+    var cursor = getSelection().getRangeAt(0);
+    var text = document.createTextNode("\u00a0\u00a0");
+    cursor.insertNode(text);
+    cursor.setStartAfter(text);
+    cursor.setEndAfter(text);
   }
 }
 iframe.onload = function() {
