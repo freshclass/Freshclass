@@ -17,8 +17,7 @@ function copy(x) {
       (location.pathname.endsWith("/") ? "" : "/") +
       x;
   } else {
-    e.value =
-      x;
+    e.value = x;
   }
   document.body.appendChild(e);
   e.select();
@@ -27,5 +26,7 @@ function copy(x) {
 }
 if (location.hash) {
   scrollTo(0, 0);
-  scrollto(location.hash.replace("#", ""));
+  setTimeout(function() {
+    scrollto(location.hash.replace("#", ""));
+  }, 500);
 }
