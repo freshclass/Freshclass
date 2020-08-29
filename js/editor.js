@@ -27,7 +27,7 @@ if (exercise) {
           "Declass / Editor / " +
           exercise
             .replace(/\-\-/g, "")
-            .replace(/\-/g, " ")
+            .replace(/\-/g, " / ")
             .replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase());
       } else {
         code.textContent =
