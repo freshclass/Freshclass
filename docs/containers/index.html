@@ -54,66 +54,67 @@
       </details>
     </aside>
     <main>
-      <h1>Text</h1>
+      <h1>Containers</h1>
       <p>
-        In this section we will teach you how to use the two main types of text
-        with Declass:
+        Declass supports two main containers for storing information and
+        messages.
       </p>
       <ol>
-        <li>Headings</li>
-        <li>Paragraphs</li>
+        <li><code>&lt;div&gt;</code>s</li>
+        <li>Footers</li>
       </ol>
-      <h2 id="headings"><a onclick="copy('#headings')">#</a> Headings</h2>
+      <h2 id="divs">
+        <a onclick="copy('#divs')">#</a> <code>&lt;div&gt;</code>s
+      </h2>
       <p>
-        There are 6 sizes of headings. Use <code>&lt;h1&gt;</code> for size 6,
-        <code>&lt;h2&gt;</code> for size 5, all the way down to
-        <code>&lt;h6&gt;</code> for size 1.
+        The best way to use a <code>&lt;div&gt;</code> tag is to put a heading,
+        text, and maybe some buttons inside of it. A
+        <code>&lt;div&gt;</code> has an automatic width of 100% and will fill
+        the available width and inherit the pages theme color. You can see a
+        custom example of a <code>&lt;div&gt;</code> here:
       </p>
-      <div>
-        <h2>
-          FUN FACT
-        </h2>
-        <p>
-          <code>&lt;h6&gt;</code> is smaller than regular text on large devices
-          and <code>&lt;h5&gt;</code> is the same as it.
-        </p>
+      <div style="--color; var(--bluepurple)">
+        <h1>
+          Hi!
+        </h1>
+        <p>I'm text inside of a <code>div</code>.</p>
       </div>
-      <pre><code>&lt;body&gt;
+      <pre><code>&lt;div&gt;
   &lt;h1&gt;
-    I'm a size 6 heading
+    Hi!
   &lt;/h1&gt;
-  &lt;h2&gt;
-    I'm a size 5 heading
-  &lt;/h2&gt;
-    ...
-&lt;/body&gt;</code></pre>
-      <a href="/docs/editor/?exercise=text-headings" target="_blank"
+  &lt;p&gt;
+    I'm text inside of a &lt;code&gt;div&lt;/code&gt;.
+  &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      <a href="/docs/editor/?exercise=containers-divs" target="_blank"
         ><button>
           Open In Editor
         </button></a
       >
-      <h2 id="paragraphs"><a onclick="copy('#paragraphs')">#</a> Paragraphs</h2>
+      <h2 id="footers"><a onclick="copy('#footers')">#</a> Footers</h2>
       <p>
-        Everything that isn't a direct child of another element should be
-        wrapped in <code>&lt;p&gt;</code> tags, which create paragraphs. Why?
-        Paragraphs are mobile-friendly, have a large margin, and are larger than
-        regular text.
+        It's recommended to put a footer at the bottom of your page. It looks
+        similar to a <code>&lt;div&gt;</code>, but it automatically has smaller
+        text and is more mobile-friendly. It can be filled with paragraphs,
+        headers, dropdowns, (which you will learn about later) and more! You can
+        see an example of a footer at the bottom of this page.
       </p>
-      <pre><code>&lt;div&gt;
-  &lt;h3&gt;
-    I don't have to be wrapped in a paragraph.
-  &lt;/h3&gt;
-&lt;/div&gt;
-&lt;p&gt;
-  I do.
-&lt;/p&gt;</code></pre>
-      <a href="/docs/editor/?exercise=text-paragraphs" target="_blank"
+      <pre><code>&lt;footer&gt;
+  &lt;h1&gt;
+    Hi!
+  &lt;/h1&gt;
+  &lt;p&gt;
+    I'm text inside of a footer.
+  &lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+      <a href="/docs/editor/?exercise=containers-footers" target="_blank"
         ><button>
           Open In Editor
         </button></a
-      ><br><br>
+      ><br /><br />
       <a href="/docs/--color"><button>Back</button></a>
-      <a href="/docs/containers"><button>Next</button></a>
+      <a disabled title="Coming Soon!"><button>Next</button></a>
     </main>
     <footer>
       <h1>

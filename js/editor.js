@@ -6,7 +6,6 @@ function write(e) {
   result.write(e);
   result.close();
 }
-write('<!DOCTYPE html><html><head></head><body></body></html>')
 function run() {
   write(
     code.innerHTML
@@ -21,15 +20,20 @@ if (exercise) {
       return e.text();
     })
     .then(function(e) {
-      code.textContent = e;
-      write(e.replace(/\t\n/g, ""));
+      if (e.indexOf("404") < 0 && e.indexOf("Not Found") < 0) {
+        code.textContent = e;
+        write(e.replace(/\t\n/g, ""));
+        document.title =
+          "Declass / Editor / " +
+          exercise
+            .replace(/\-\-/g, "")
+            .replace(/\-/g, " ")
+            .replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase());
+      } else {
+        code.textContent =
+          "Exercise not found, please make sure you're using a valid link.";
+      }
     });
-  document.title =
-    "Declass / Editor / " +
-    exercise
-      .replace(/\-\-/g, "")
-      .replace(/\-/g, " ")
-      .replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase());
 }
 code.addEventListener("keydown", insertTabAtCaret);
 function insertTabAtCaret(event) {
