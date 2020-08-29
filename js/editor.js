@@ -15,7 +15,7 @@ function run() {
   );
 }
 if (exercise) {
-  fetch("/docs/editor/" + exercise + ".txt")
+  fetch("/docs/editor/exercises/" + exercise + ".txt")
     .then(function(e) {
       return e.text();
     })
