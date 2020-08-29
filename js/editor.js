@@ -6,6 +6,7 @@ function write(e) {
   result.write(e);
   result.close();
 }
+write('<!DOCTYPE html><html><head></head><body></body></html>')
 function run() {
   write(
     code.innerHTML
