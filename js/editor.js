@@ -23,6 +23,12 @@ if (exercise) {
       code.textContent = e;
       write(e.replace(/\t\n/g, ""));
     });
+  document.title =
+    "Declass / Editor / " +
+    exercise
+      .replace(/\-\-/g, "")
+      .replace(/\-/g, " ")
+      .replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase());
 }
 code.addEventListener("keydown", insertTabAtCaret);
 function insertTabAtCaret(event) {
