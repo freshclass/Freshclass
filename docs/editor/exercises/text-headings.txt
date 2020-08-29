@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://declass.netlify.app/css/declass.min.css"
+    />
+  </head>
+  <body>
+    <h1>I'm a size 6 heading</h1>
+    <h2>I'm a size 5 heading</h2>
+    <h3>I'm a size 4 heading</h3>
+    <h4>I'm a size 3 heading</h4>
+    <h5>I'm a size 2 heading</h5>
+    <h6>I'm a size 1 heading</h6>
+    And I'm regular text
+  </body>
+</html>
+<!-- This is an example of Declass -->

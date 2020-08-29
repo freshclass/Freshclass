@@ -57,15 +57,64 @@
     <main>
       <h1>Text</h1>
       <p>
-        
+        In this section we will teach you how to use the two main types of text
+        with Declass:
       </p>
-      <a href="/docs/editor/?exercise=--color-div" target="_blank"
+      <ol>
+        <li>Headings</li>
+        <li>Paragraphs</li>
+      </ol>
+      <h2 id="headings"><a onclick="copy('#headings')">#</a> Headings</h2>
+      <p>
+        There are 6 sizes of headings. Use <code>&lt;h1&gt;</code> for size 6,
+        <code>&lt;h2&gt;</code> for size 5, all the way down to
+        <code>&lt;h6&gt;</code> for size 1.
+      </p>
+      <div>
+        <h2>
+          FUN FACT
+        </h2>
+        <p>
+          <code>&lt;h6&gt;</code> is smaller than regular text on large devices
+          and <code>&lt;h5&gt;</code> is the same as it.
+        </p>
+      </div>
+      <pre><code>&lt;body&gt;
+  &lt;h1&gt;
+    I'm a size 6 heading
+  &lt;/h1&gt;
+  &lt;h2&gt;
+    I'm a size 5 heading
+  &lt;/h2&gt;
+    ...
+&lt;/body&gt;</code></pre>
+      <a href="/docs/editor/?exercise=text-headings" target="_blank"
         ><button>
           Open In Editor
         </button></a
-      ><br /><br />
-      <a href="/docs"><button>Back</button></a>
-      <a href="/docs/text"><button>Next</button></a>
+      >
+      <h2 id="paragraphs"><a onclick="copy('#paragraphs')">#</a> Paragraphs</h2>
+      <p>
+        Everything that isn't a direct child of another element should be
+        wrapped in <code>&lt;p&gt;</code> tags, which create paragraphs. Why?
+        Paragraphs are mobile-friendly, have a large margin, and are larger than
+        regular text.
+      </p>
+      <pre><code>&lt;div&gt;
+  &lt;h3&gt;
+    I don't have to be wrapped in a paragraph.
+  &lt;/h3&gt;
+&lt;/div&gt;
+&lt;p&gt;
+  I do.
+&lt;/p&gt;</code></pre>
+      <a href="/docs/editor/?exercise=text-paragraphs" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      ><br><br>
+      <a href="/docs/--color"><button>Back</button></a>
+      <a disabled><button>Next</button></a>
     </main>
     <footer>
       <h1>

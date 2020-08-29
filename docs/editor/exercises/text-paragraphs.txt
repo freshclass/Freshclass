@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://declass.netlify.app/css/declass.min.css"
+    />
+  </head>
+  <body>
+    I now have Declass! Yay!
+    <div>
+      <h3>
+        I don't have to be wrapped in a paragraph.
+      </h3>
+    </div>
+    <p>
+      I do.
+    </p>
+  </body>
+</html>
+<!-- This is an example of Declass -->
