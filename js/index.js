@@ -7,7 +7,6 @@ function scrollto(e) {
     top: document.getElementById(e).getBoundingClientRect().top - 90,
     behavior: "smooth"
   });
-  onpageshow = scrollto(e);
 }
 function copy(x) {
   var e = document.createElement("textarea");
