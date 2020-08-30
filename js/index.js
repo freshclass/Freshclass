@@ -3,15 +3,10 @@ function scrollto(e) {
   if (e === "about" && location.pathname === "/") {
     document.title = "Declass | About";
   }
-  if (
-    pageYOffset <
-    document.getElementById(e).getBoundingClientRect().top - 100
-  ) {
-    scroll({
-      top: document.getElementById(e).getBoundingClientRect().top - 100,
-      behavior: "smooth"
-    });
-  }
+  scroll({
+    top: document.getElementById(e).getBoundingClientRect().top - 90,
+    behavior: "smooth"
+  });
 }
 function copy(x) {
   var e = document.createElement("textarea");
