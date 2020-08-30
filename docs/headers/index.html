@@ -13,7 +13,7 @@
       gtag("js", new Date());
       gtag("config", "UA-166680079-3");
     </script>
-    <title>Declass / Docs / Text</title>
+    <title>Declass / Docs / Headers</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -58,82 +58,77 @@
       </details>
     </aside>
     <main>
-      <h1>Text</h1>
+      <h1>Headers</h1>
       <p>
-        In this section we will teach you how to use the two main types of text
-        with Declass:
+        You can create a header using the <code>&lt;header&gt;</code> tag.
+        Headers will not have a background color. They will enlarge text wrapped
+        inside them. Headers are recommended for home and landing pages.
       </p>
-      <ol>
-        <li>Headings</li>
-        <li>Paragraphs</li>
-      </ol>
-      <h2 id="headings"><a onclick="copy('#headings')">#</a> Headings</h2>
+      <pre><code>&lt;header&gt;
+  &lt;h1&gt;
+    Hi!
+  &lt;/h1&gt;
+  &lt;h2&gt;
+    I'm a header!
+  &lt;/h2&gt;
+&lt;/header&gt;</code></pre>
+      <a href="/docs/editor/?exercise=headers" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <h2 id="hgroup">
+        <a onclick="copy('#hgroup')">#</a> <code>&lt;hgroup&gt;</code>
+      </h2>
       <p>
-        There are 6 sizes of headings. Use <code>&lt;h1&gt;</code> for size 6,
-        <code>&lt;h2&gt;</code> for size 5, all the way down to
-        <code>&lt;h6&gt;</code> for size 1.
+        To get rid of extra padding, you can wrap the text inside of the header
+        in an <code>&lt;hgroup&gt;</code> tag.
       </p>
+      <pre><code>&lt;header&gt;
+  &lt;hgroup&gt;
+    &lt;h1&gt;
+      Hi!
+    &lt;/h1&gt;
+    &lt;h2&gt;
+      I'm a header without a ton of padding.
+    &lt;/h2&gt;
+  &lt;/hgroup&gt;
+&lt;/header&gt;</code></pre>
+      <a href="/docs/editor/?exercise=headers-hgroup" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <h2 id="center">
+        <a onclick="copy('#center')">#</a> <code>&lt;center&gt;</code>
+      </h2>
+      <p>
+        Wrapping the content of the header inside of a
+        <code>&lt;center&gt;</code> tag will center it.
+      </p>
+      <pre><code>&lt;header&gt;
+  &lt;center&gt;
+    &lt;h1&gt;
+      Hi!
+    &lt;/h1&gt;
+    &lt;h2&gt;
+      I'm a centered header.
+    &lt;/h2&gt;
+  &lt;/center&gt;
+&lt;/header&gt;</code></pre>
+      <a href="/docs/editor/?exercise=headers-center" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
       <div>
         <h2>
           FUN FACT
         </h2>
         <p>
-          <code>&lt;h6&gt;</code> is smaller than regular text on large devices
-          and <code>&lt;h5&gt;</code> is the same size as text.
+          Declass's headers have a 5 pixel thick bottom border.
         </p>
       </div>
-      <pre><code>&lt;body&gt;
-  &lt;h1&gt;
-    I'm a size 6 heading
-  &lt;/h1&gt;
-  &lt;h2&gt;
-    I'm a size 5 heading
-  &lt;/h2&gt;
-    ...
-&lt;/body&gt;</code></pre>
-      <a href="/docs/editor/?exercise=text-headings" target="_blank"
-        ><button>
-          Open In Editor
-        </button></a
-      >
-      <h2 id="paragraphs"><a onclick="copy('#paragraphs')">#</a> Paragraphs</h2>
-      <p>
-        Everything that isn't a direct child of another element should be
-        wrapped in <code>&lt;p&gt;</code> tags, which create paragraphs. Why?
-        Paragraphs are mobile-friendly, have a large margin, and are larger than
-        regular text.
-      </p>
-      <pre><code>&lt;div&gt;
-  &lt;h3&gt;
-    I don't have to be wrapped in a paragraph.
-  &lt;/h3&gt;
-&lt;/div&gt;
-&lt;p&gt;
-  I do.
-&lt;/p&gt;</code></pre>
-      <a href="/docs/editor/?exercise=text-paragraphs" target="_blank"
-        ><button>
-          Open In Editor
-        </button></a
-      >
-      <h2 id="center"><a onclick="copy('#center')">#</a> Centered Text</h2>
-      <p>
-        Text can be centered by wrapping it inside of a
-        <code>&lt;center&gt;</code> tag. You can see an example below:
-      </p>
-      <pre><code>&lt;center&gt;
-  &lt;h1&gt;
-    Centered Text
-  &lt;/h1&gt;
-  &lt;p&gt;
-    This text is centered
-  &lt;/p&gt;
-&lt;/center&gt;</code></pre>
-      <a href="/docs/editor/?exercise=text-center" target="_blank"
-        ><button>
-          Open In Editor
-        </button></a
-      >
       <table>
         <tr>
           <th>Support</th>
@@ -144,20 +139,20 @@
           <th>Opera</th>
         </tr>
         <tr>
-          <td><code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code></td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
+          <td>Headers</td>
+          <td>5+</td>
+          <td>5+</td>
+          <td>4+</td>
+          <td>12+</td>
+          <td>11.5+</td>
         </tr>
         <tr>
-          <td><code>&lt;p&gt;</code></td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
+          <td><code>&lt;hgroup&gt;</code></td>
+          <td>5+</td>
+          <td>5+</td>
+          <td>4+</td>
+          <td>12+</td>
+          <td>11.5+</td>
         </tr>
         <tr>
           <td><code>&lt;center&gt;</code></td>
@@ -168,12 +163,13 @@
           <td>All</td>
         </tr>
       </table>
+
       <p>
         Information for this support table comes from
         <a href="https://caniuse.com/">Can I Use</a>.
       </p>
       <a href="/docs/--color"><button>Back</button></a>
-      <a href="/docs/containers"><button>Next</button></a>
+      <a disabled><button>Next</button></a>
     </main>
     <footer>
       <h1>

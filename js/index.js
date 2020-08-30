@@ -12,7 +12,8 @@ function copy(x) {
   var e = document.createElement("textarea");
   if (x.startsWith("#")) {
     e.value =
-      "https://declass.netlify.app" +
+      "https://" +
+      location.hostname +
       location.pathname +
       (location.pathname.endsWith("/") ? "" : "/") +
       x;
