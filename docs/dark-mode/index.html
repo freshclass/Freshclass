@@ -13,7 +13,7 @@
       gtag("js", new Date());
       gtag("config", "UA-166680079-3");
     </script>
-    <title>Declass / Docs / Headers</title>
+    <title>Declass / Docs / Dark Mode</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -58,73 +58,21 @@
       </details>
     </aside>
     <main>
-      <h1>Headers</h1>
+      <h1>Dark Mode</h1>
       <p>
-        You can create a header using the <code>&lt;header&gt;</code> tag.
-        Headers will not have a background color. They will enlarge text wrapped
-        inside them. Headers are recommended for home and landing pages.
+        To add dark mode to your site, add two CSS variables named
+        <code>--white</code> and <code>--black</code> to your
+        <code>&lt;body&gt;</code> tag, each with the opposite value.
       </p>
-      <pre><code>&lt;header&gt;
+      <pre><code>&lt;body style="--white: black; --black: white;"&gt;
   &lt;h1&gt;
     Hi!
   &lt;/h1&gt;
-  &lt;h2&gt;
-    I'm a header!
-  &lt;/h2&gt;
-&lt;/header&gt;</code></pre>
-      <a href="/docs/editor/?exercise=headers" target="_blank"
-        ><button>
-          Open In Editor
-        </button></a
-      >
-      <div>
-        <h2>
-          FUN FACT
-        </h2>
-        <p>
-          Declass's headers have a 5 pixel thick bottom border.
-        </p>
-      </div>
-      <h2 id="hgroup">
-        <a onclick="copy('#hgroup')">#</a> <code>&lt;hgroup&gt;</code>
-      </h2>
-      <p>
-        To get rid of extra padding, you can wrap the text inside of the header
-        in an <code>&lt;hgroup&gt;</code> tag.
-      </p>
-      <pre><code>&lt;header&gt;
-  &lt;hgroup&gt;
-    &lt;h1&gt;
-      Hi!
-    &lt;/h1&gt;
-    &lt;h2&gt;
-      I'm a header without a ton of padding.
-    &lt;/h2&gt;
-  &lt;/hgroup&gt;
-&lt;/header&gt;</code></pre>
-      <a href="/docs/editor/?exercise=headers-hgroup" target="_blank"
-        ><button>
-          Open In Editor
-        </button></a
-      >
-      <h2 id="center">
-        <a onclick="copy('#center')">#</a> <code>&lt;center&gt;</code>
-      </h2>
-      <p>
-        Wrapping the content of the header inside of a
-        <code>&lt;center&gt;</code> tag will center it.
-      </p>
-      <pre><code>&lt;header&gt;
-  &lt;center&gt;
-    &lt;h1&gt;
-      Hi!
-    &lt;/h1&gt;
-    &lt;h2&gt;
-      I'm a centered header.
-    &lt;/h2&gt;
-  &lt;/center&gt;
-&lt;/header&gt;</code></pre>
-      <a href="/docs/editor/?exercise=headers-center" target="_blank"
+  &lt;p&gt;
+    This page has dark mode.
+  &lt;/p&gt;
+&lt;/body&gt;</code></pre>
+      <a href="/docs/editor/?exercise=dark-mode" target="_blank"
         ><button>
           Open In Editor
         </button></a
@@ -139,28 +87,12 @@
           <th>Opera</th>
         </tr>
         <tr>
-          <td>Headers</td>
-          <td>5+</td>
-          <td>5+</td>
-          <td>4+</td>
-          <td>12+</td>
-          <td>11.5+</td>
-        </tr>
-        <tr>
-          <td><code>&lt;hgroup&gt;</code></td>
-          <td>5+</td>
-          <td>5+</td>
-          <td>4+</td>
-          <td>12+</td>
-          <td>11.5+</td>
-        </tr>
-        <tr>
-          <td><code>&lt;center&gt;</code></td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
-          <td>All</td>
+          <td>Dark Mode</td>
+          <td>49+</td>
+          <td>9.1+</td>
+          <td>31+</td>
+          <td>16+</td>
+          <td>36+</td>
         </tr>
       </table>
 
@@ -168,8 +100,6 @@
         Information for this support table comes from
         <a href="https://caniuse.com/">Can I Use</a>.
       </p>
-      <a href="/docs/--color"><button>Back</button></a>
-      <a disabled><button>Next</button></a>
     </main>
     <footer>
       <h1>
