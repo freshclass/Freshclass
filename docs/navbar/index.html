@@ -13,7 +13,7 @@
       gtag("js", new Date());
       gtag("config", "UA-166680079-3");
     </script>
-    <title>Declass / Docs / Containers</title>
+    <title>Declass / Docs / Navbar</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -58,61 +58,83 @@
       </details>
     </aside>
     <main>
-      <h1>Containers</h1>
+      <h1>Navbar</h1>
       <p>
-        Declass supports two main colorful containers for storing information and
-        messages.
+        To create a top navigation bar, use the <code>&lt;nav&gt;</code> tag and
+        fill it with links, as such:
       </p>
-      <ol>
-        <li><code>&lt;div&gt;</code>s</li>
-        <li>Footers</li>
-      </ol>
-      <h2 id="divs">
-        <a onclick="copy('#divs')">#</a> <code>&lt;div&gt;</code>s
-      </h2>
-      <p>
-        The best way to use a <code>&lt;div&gt;</code> tag is to put a heading,
-        text, and maybe some buttons inside of it. A
-        <code>&lt;div&gt;</code> has an automatic width of 100% and will fill
-        the available width and inherit the pages theme color. You can see a
-        custom example of a <code>&lt;div&gt;</code> here:
-      </p>
-      <div style="--color; var(--bluepurple)">
-        <h1>
-          Hi!
-        </h1>
-        <p>I'm text inside of a <code>div</code>.</p>
-      </div>
-      <pre><code>&lt;div&gt;
-  &lt;h1&gt;
-    Hi!
-  &lt;/h1&gt;
-  &lt;p&gt;
-    I'm text inside of a &lt;code&gt;div&lt;/code&gt;.
-  &lt;/p&gt;
-&lt;/div&gt;</code></pre>
-      <a href="/docs/editor/?exercise=containers-divs" target="_blank"
+      <pre><code>&lt;nav&gt;
+  &lt;a href="/1.html"&gt;
+    Link 1
+  &lt;/a&gt;
+  &lt;a href="/2.html"&gt;
+    Link 2
+  &lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+      <a href="/docs/editor/?exercise=navbar-links" target="_blank"
         ><button>
           Open In Editor
         </button></a
       >
-      <h2 id="footers"><a onclick="copy('#footers')">#</a> Footers</h2>
+      <h2 id="center">
+        <a onclick="copy('#center')">#</a> <code>&lt;center&gt;</code>
+      </h2>
       <p>
-        It's recommended to put a footer at the bottom of your page. It looks
-        similar to a <code>&lt;div&gt;</code>, but it automatically has smaller
-        text and is more mobile-friendly. It can be filled with paragraphs,
-        headers, dropdowns, (which you will learn about later) and more! You can
-        see an example of a footer at the bottom of this page.
+        The links in a navbar will be automatically stretched to fill the
+        available space. To prevent this, center the elements using a
+        <code>&lt;center&gt;</code> tag.
       </p>
-      <pre><code>&lt;footer&gt;
-  &lt;h1&gt;
-    Hi!
-  &lt;/h1&gt;
-  &lt;p&gt;
-    I'm text inside of a footer.
-  &lt;/p&gt;
-&lt;/footer&gt;</code></pre>
-      <a href="/docs/editor/?exercise=containers-footers" target="_blank"
+      <pre><code>&lt;nav&gt;
+  &lt;center&gt;
+    &lt;a href="/1.html"&gt;
+      Link 1
+    &lt;/a&gt;
+    &lt;a href="/2.html"&gt;
+      Link 2
+    &lt;/a&gt;
+  &lt;/center&gt;
+&lt;/nav&gt;</code></pre>
+      <a href="/docs/editor/?exercise=navbar-center" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <h2 id="buttons"><a onclick="copy('#buttons')">#</a> Buttons</h2>
+      <p>
+        To make your links appear like buttons, wrap each one with a
+        <code>&lt;button&gt;</code> tag.
+      </p>
+      <pre><code>&lt;nav&gt;
+  &lt;button&gt;
+    &lt;a href="/1.html"&gt;
+      Link 1
+    &lt;/a&gt;
+  &lt;/button&gt;
+  &lt;button&gt;
+    &lt;a href="/2.html"&gt;
+      Link 2
+    &lt;/a&gt;
+  &lt;/button&gt;
+&lt;/nav&gt;</code></pre>
+      <a href="/docs/editor/?exercise=navbar-buttons" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <h2 id="icons"><a onclick="copy('#icons')">#</a> Icons</h2>
+      <p>
+        To put an icon or logo in your navbar, create an image and it will
+        automatically resize.
+      </p>
+      <pre><code>&lt;nav&gt;
+  &lt;a href="/1.html"&gt;
+    &lt;img src="/images/icon.png"&gt;
+  &lt;/a&gt;
+  &lt;a href="/2.html"&gt;
+    Link 2
+  &lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+      <a href="/docs/editor/?exercise=navbar-icons" target="_blank"
         ><button>
           Open In Editor
         </button></a
@@ -127,7 +149,15 @@
           <th>Opera</th>
         </tr>
         <tr>
-          <td><code>&lt;div&gt;</code>s</td>
+          <td><code>&lt;nav&gt;</code></td>
+          <td>5+</td>
+          <td>5+</td>
+          <td>4+</td>
+          <td>12+</td>
+          <td>11.5+</td>
+        </tr>
+        <tr>
+          <td><code>&lt;center&gt;</code></td>
           <td>All</td>
           <td>All</td>
           <td>All</td>
@@ -135,20 +165,29 @@
           <td>All</td>
         </tr>
         <tr>
-          <td>Footers</td>
-          <td>5+</td>
-          <td>5+</td>
-          <td>4+</td>
-          <td>12+</td>
-          <td>11.5+</td>
+          <td>Buttons</td>
+          <td>All</td>
+          <td>13.1+</td>
+          <td>All</td>
+          <td>All</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td>Icons</td>
+          <td>All</td>
+          <td>13.1+</td>
+          <td>All</td>
+          <td>All</td>
+          <td>All</td>
         </tr>
       </table>
+
       <p>
         Information for this support table comes from
         <a href="https://caniuse.com/">Can I Use</a>.
       </p>
-      <a href="/docs/text"><button>Back</button></a>
-      <a href="/docs/headers"><button>Next</button></a>
+      <a href="/docs/headers"><button>Back</button></a>
+      <a disabled><button>Next</button></a>
     </main>
     <footer>
       <h1>
