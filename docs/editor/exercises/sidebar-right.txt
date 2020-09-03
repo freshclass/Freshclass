@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://declass.netlify.app/css/declass.min.css"
+    />
+  </head>
+  <body style="--color: var(--purple)">
+    <main>
+      <h1>
+        Hi!
+      </h1>
+    </main>
+    <aside>
+      <h2>
+        Embed
+      </h2>
+    </aside>
+  </body>
+</html>
+<!-- This is an example of Declass -->

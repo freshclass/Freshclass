@@ -13,33 +13,13 @@
       gtag("js", new Date());
       gtag("config", "UA-166680079-3");
     </script>
-    <title>Declass / Docs</title>
+    <title>Declass / Docs / Sidebar</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Declass" name="twitter:title" />
     <meta property="og:site_name" content="Declass" />
-    <meta
-      content="Declass's documentation, filled with information, guides, and examples on how to use Declass on your site."
-      name="description"
-    />
-    <meta
-      content="Declass's documentation, filled with information, guides, and examples on how to use Declass on your site."
-      name="twitter:description"
-      property="og:description"
-    />
-    <meta
-      property="og:url"
-      content="https://declass.netlify.app/docs"
-      name="twitter:url"
-    />
-    <meta
-      property="og:image"
-      content="https://declass.netlify.app/images/large.png"
-      name="twitter:image"
-    />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="/css/declass.min.css" />
     <link rel="stylesheet" href="/css/turbolinks.css" />
     <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
@@ -47,13 +27,17 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"
       defer
     ></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/toggle.js" defer></script>
+    <script src="/js/docs.js" defer></script>
+    <script src="/js/year.js" defer></script>
   </head>
   <body style="--color:var(--redorange);">
     <nav>
       <button>
         <a href="/">D</a>
       </button>
-      <button disabled>
+      <button>
         <a href="/docs">Docs</a>
       </button>
       <button>
@@ -74,57 +58,92 @@
       </details>
     </aside>
     <main>
-      <h1>
-        Docs
-      </h1>
-      <div>
-        <h2>
-          Install Declass
-        </h2>
-        <p>
-          If you do not have Declass intalled on your site yet, follow the
-          instructions on <code>/get</code> to activate it.
-        </p>
-        <a href="/get"
-          ><button>
-            Get Declass
-          </button></a
-        >
-      </div>
+      <h1>Sidebar</h1>
       <p>
-        Welcome to Declass's documentation, filled with information, guides, and
-        examples on how to use Declass on your site. Knowing how to use Declass
-        properly is critical when you create a site with it. Unlike many other
-        classless <attr title="Cascading Style Sheets">CSS</attr> frameworks,
-        Declass has many options, including:
+        To add a sidebar to your site, use the <code>&lt;aside&gt;</code> tag to
+        create a sidebar. You <i>must</i> wrap the rest of your body code in a
+        <code>&lt;main&gt;</code> tag. To put the sidebar on the left, write
+        code like such:
       </p>
-      <ul>
-        <li>Text</li>
-        <li>Containers</li>
-        <li>Quotes</li>
-        <li>Navigation bars</li>
-        <li>Side Bars</li>
-        <li>Buttons</li>
-        <li>Colored lists</li>
-        <li>Headers</li>
-        <li>Footers</li>
-        <li>Tables</li>
-        <li>Dropdowns</li>
-        <li>Code</li>
-        <li>And more...</li>
-      </ul>
-      <p>
-        This may seem like many confusing options, and if that's the case,
-        reading our docs may help. Each of these features have articles with
-        examples, information, and guides. So make sure to check out the guides
-        and you'll be great at using Declass in no time!
-      </p>
-      <button disabled>Back</button>
-      <a href="/docs/--color"
+      <pre><code>&lt;aside&gt;
+  &lt;h3&gt;
+    Navigation
+  &lt;/h3&gt;
+&lt;/aside&gt;
+&lt;main&gt;
+  &lt;h1&gt;
+    Hi!
+  &lt;/h1&gt;
+&lt;/main&gt;</code></pre>
+      <a href="/docs/editor/?exercise=sidebar-left" target="_blank"
         ><button>
-          Next
+          Open In Editor
         </button></a
       >
+      <p>
+        A right-positioned sidebar can also be created by putting the sidebar
+        code after the <code>&lt;main&gt;</code> element, which is ideal for
+        placing embedded information.
+      </p>
+      <pre><code>&lt;main&gt;
+  &lt;h1&gt;
+    Hi!
+  &lt;/h1&gt;
+&lt;/main&gt;
+&lt;aside&gt;
+  &lt;h2&gt;
+    Embed
+  &lt;/h2&gt;
+&lt;/aside&gt;
+</code></pre>
+      <a href="/docs/editor/?exercise=sidebar-right" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <div>
+        <h2>
+          Warning
+        </h2>
+        <p>
+          You can't use two sidebars at once, and non-sidebar code must be
+          wrapped in a <code>&lt;main&gt;</code> tag.
+        </p>
+      </div>
+      <table>
+        <table>
+          <tr>
+            <th>Support</th>
+            <th>Chrome</th>
+            <th>Safari</th>
+            <th>Firefox</th>
+            <th>Edge</th>
+            <th>Opera</th>
+          </tr>
+          <tr>
+            <td><code>&lt;aside&gt;</code></td>
+            <td>5+</td>
+            <td>5+</td>
+            <td>4+</td>
+            <td>12+</td>
+            <td>11.5+</td>
+          </tr>
+          <tr>
+            <td><code>&lt;main&gt;</code></td>
+            <td>26+</td>
+            <td>7+</td>
+            <td>21+</td>
+            <td>12+</td>
+            <td>16+</td>
+          </tr>
+        </table>
+      </table>
+      <p>
+        Information for this support table comes from
+        <a href="https://caniuse.com/">Can I Use</a>.
+      </p>
+      <a href="/docs/navbar"><button>Back</button></a>
+      <a disabled><button>Next</button></a>
     </main>
     <footer>
       <h1>
@@ -157,9 +176,5 @@
     <noscript>
       <meta http-equiv="refresh" content="0; url = /js" />
     </noscript>
-    <script src="/js/index.js"></script>
-    <script src="/js/toggle.js"></script>
-    <script src="/js/docs.js"></script>
-    <script src="/js/year.js"></script>
   </body>
 </html>

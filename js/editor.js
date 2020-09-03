@@ -28,11 +28,14 @@ if (exercise) {
           "Declass / Editor / " +
           exercise
             .replace(/\-\-/g, "")
+            .replace(/k-m/g, "km")
             .replace(/\-/g, " / ")
+            .replace(/km/g, "k m")
             .replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase());
       } else {
         code.textContent =
           "Exercise not found, please make sure you're using a valid link.";
+        document.title = "Declass / Editor / Not Found";
       }
     });
 }
@@ -48,5 +51,5 @@ function tab(e) {
   }
 }
 iframe.onload = function() {
-  iframe.style.height = result.body.scrollHeight+2 + "px";
+  iframe.style.height = result.body.scrollHeight + 2 + "px";
 };

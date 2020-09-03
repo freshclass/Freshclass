@@ -1,4 +1,4 @@
-setInterval(function() {
+function get() {
   fetch("/docs/nav.html")
     .then(function(e) {
       return e.text();
@@ -8,4 +8,12 @@ setInterval(function() {
         .split("-->")[1]
         .split("<!--")[0];
     });
-}, 2000);
+}
+var currentPage = location.href;
+setInterval(function() {
+  if (currentPage != location.href) {
+    get();
+    currentPage = location.href;
+  }
+}, 500);
+get();
