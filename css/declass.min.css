@@ -309,8 +309,7 @@ pre {
     filter: brightness(85%);
 }
 details,
-div,
-footer {
+div{
     color: #fff;
     margin-top: 50px;
     width: 100%;
