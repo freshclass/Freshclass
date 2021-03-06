@@ -255,12 +255,12 @@ header input[type="reset"],
 header input[type="submit"] {
     font-size: 1.2em;
 }
-/* footer {
+footer {
     display: block;
     font-size: 0.65em;
     margin: 0;
     clear: both;
-} */
+}
 audio,
 canvas,
 embed,
@@ -316,6 +316,10 @@ footer {
     width: 100%;
     border-radius: 10px;
     padding: 20px 50px;
+}
+footer {
+    color: #fff;
+    
 }
 div {
     margin: 30px 0;
