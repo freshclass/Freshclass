@@ -20,4 +20,4 @@ Pages/Other Information:
 
 
 ### Copyright @DerDer56 under the [MIT License](https://opensource.org/licenses/MIT) (Declass License)
-### Copyright @brokentoken5 under the [MIT License](https://opensource.org/licenses/MIT) (Freshclass License)
+### Copyright @brokentoken5 under the [Mozilla Public License 2.0](https://github.com/brokentoken5/Freshclass/blob/Master/LICENSE) (Freshclass License)
