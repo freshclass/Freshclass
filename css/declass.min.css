@@ -91,7 +91,8 @@ select {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5em;
-    border-radius: 5px;
+    border: none;
+    border-radius: 10px;
     width: auto;
 }
 select {
