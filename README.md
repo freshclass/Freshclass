@@ -1,14 +1,23 @@
-# Declass [![Netlify Status](https://api.netlify.com/api/v1/badges/4ad2ecf0-c751-478e-a7ba-ad18c83fc1a3/deploy-status)](https://app.netlify.com/sites/declass/deploys)
+# Freshclass
 
-CSS Frameworks, reimagined. Declass makes it easy to design a quick new webpage or add styling to a major project.
+Give your site a new fresh look. By using Freshclass you can easily and css styling to a project.
 
+Freshclass is a maintained copy of [Declass.](https://github.com/DerDer56/Declass) Declass is made by @derder56 and is under the MIT license. 
+
+Freshclass is a new UNOFFICAL verison of Declass.
 <hr>
 
-### Version 1 is coming out soon after I finish writing the [docs](https://declass.netlify.app/docs).
+### What Will Freshclass Bring?
+- More Colors
+- Website Re-design
+- Color Theme Options
 
-Pages:
+Pages/Other Information:
 
-- [Github Repo](https://github.com/DerDer56/Declass) (Feel free to open an issue)
-- [Site](https://declass.netlify.app)
+- [Freshclass Github Repo](https://github.com/brokentoken5/Freshclass) (Feel free to open an issue)
+- [Site](https://freshclass.netlify.app)
+- [Declass Github Repo](https://github.com/derder56/Declass) (Orginal, but unmaintained verison.)
 
-### Copyright @DerDer56 under the [MIT License](https://opensource.org/licenses/MIT)
+
+### Copyright @DerDer56 under the [MIT License](https://opensource.org/licenses/MIT) (Declass License)
+### Copyright @brokentoken5 under the [MIT License](https://opensource.org/licenses/MIT) (Freshclass License)
