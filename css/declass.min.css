@@ -309,17 +309,15 @@ pre {
     filter: brightness(85%);
 }
 details,
-div{
+div,
+footer{
     color: #fff;
     margin-top: 50px;
     width: 100%;
     border-radius: 10px;
     padding: 20px 50px;
 }
-footer {
-    color: #fff;
-    
-}
+
 div {
     margin: 30px 0;
 }
