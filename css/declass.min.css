@@ -15,7 +15,6 @@
     --bluepurple: #5c0cf2;
     --purple: #a730f9;
     --purplered: #f743bb;
-    --flat: border-radius:0;
 }
 *,
 ::after,
@@ -283,6 +282,7 @@ samp {
     color: var(--color);
     font-family: "Lucida Console", monospace;
     font-size: 0.8em;
+    border-radius: 8px ;
     vertical-align: 10%;
     filter: brightness(85%);
 }
