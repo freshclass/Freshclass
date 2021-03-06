@@ -290,7 +290,9 @@ pre code,
 pre kbd,
 pre samp {
     font-size: 1.5em;
+    border-radius: 10px;
     vertical-align: -30%;
+    border-radius: 10px;
     overflow-x: scroll;
     filter: brightness(1);
     padding: 0;
@@ -299,6 +301,7 @@ pre samp {
 pre {
     background-color: #fff;
     margin: 0;
+    border-radius: 10px;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 18px;
