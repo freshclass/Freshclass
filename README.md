@@ -7,6 +7,9 @@ Freshclass is a maintained copy of [Declass.](https://github.com/DerDer56/Declas
 Freshclass is a new UNOFFICAL verison of Declass.
 <hr>
 
+### What Does it work with?
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" width="40px"> 
+
 ### What Will Freshclass Bring?
 - More Colors
 - Website Re-design
