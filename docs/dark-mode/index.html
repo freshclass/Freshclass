@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Freshclass / Docs / Dark Mode</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Declass" name="twitter:title" />
+    <meta property="og:site_name" content="Declass" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/css/freshclass.min.css" />
+    <link rel="stylesheet" href="/css/turbolinks.css" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"
+      defer
+    ></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/toggle.js" defer></script>
+    <script src="/js/docs.js" defer></script>
+    <script src="/js/year.js" defer></script>
+  </head>
+  <body style="--color:var(--Blue);">
+    <nav>
+      <button>
+        <a href="/">F</a>
+      </button>
+      <button>
+        <a href="/docs">Docs</a>
+      </button>
+      <button>
+        <a href="/#about">About</a>
+      </button>
+      <button>
+        <a href="/get">Install</a>
+      </button>
+    </nav>
+    <aside id="sidebar">
+      <details>
+        <summary> Docs </summary>
+        <p>
+          We are currently getting information from the server. If no
+          information is shown in the next 5 seconds, please make sure that you
+          are using a fast browser with good internet.
+        </p>
+      </details>
+    </aside>
+    <main>
+      <h1>Dark Mode</h1>
+      <p>
+        To add dark mode to your site, add two CSS variables named
+        <code>--white</code> and <code>--black</code> to your
+        <code>&lt;body&gt;</code> tag, each with the opposite value.
+      </p>
+      <pre><code>&lt;body style="--white: black; --black: white;"&gt;
+  &lt;h1&gt;
+    Hi!
+  &lt;/h1&gt;
+  &lt;p&gt;
+    This page has dark mode.
+  &lt;/p&gt;
+&lt;/body&gt;</code></pre>
+      <a href="/docs/editor/?exercise=dark-mode" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <h2 id="toggle"><a onclick="copy('#toggle')">#</a> Toggle</h2>
+      <p>
+        Adding a dark mode toggle button to your page is easy. Just paste the
+        following code into the <code>&lt;head&gt;</code> section of your page:
+      </p>
+      <pre><code>&lt;script src="https://declass.netlify.app/js/toggle.js" defer&gt;&lt;/script&gt;</code></pre>
+      <button
+        onclick="copy(unescape('%3C%73%63%72%69%70%74%20%73%72%63%3D%22%68%74%74%70%73%3A%2F%2F%64%65%63%6C%61%73%73%2E%6E%65%74%6C%69%66%79%2E%61%70%70%2F%6A%73%2F%74%6F%67%67%6C%65%2E%6A%73%22%20%64%65%66%65%72%3E%3C%2F%73%63%72%69%70%74%3E%0A'))"
+      >
+        Copy
+      </button>
+      <a href="/docs/editor/?exercise=dark-mode-toggle" target="_blank"
+        ><button>
+          Open In Editor
+        </button></a
+      >
+      <table>
+        <table>
+          <tr>
+            <th>Support</th>
+            <th>Chrome</th>
+            <th>Safari</th>
+            <th>Firefox</th>
+            <th>Edge</th>
+            <th>Opera</th>
+          </tr>
+          <tr>
+            <td>Dark Mode</td>
+            <td>49+</td>
+            <td>9.1+</td>
+            <td>31+</td>
+            <td>16+</td>
+            <td>36+</td>
+          </tr>
+        </table>
+      </table>
+      <p>
+        Information for this support table comes from
+        <a href="https://caniuse.com/">Can I Use</a>.
+      </p>
+    </main>
+    <footer>
+      <h1>
+        Declass
+      </h1>
+      <details
+        ><summary>Pages</summary>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/docs"><li>Docs</li></a>
+          <a href="/about"><li>About</li></a>
+          <a href="/get"><li>Get</li></a>
+        </ul></details
+      >
+      <details
+        ><summary>More</summary>
+        <ul>
+          <a href="/docs/templates"><li>Templates</li></a>
+          <a href="https://github.com/DerDer56/Declass"><li>Github</li></a>
+          <a href="/docs/thanks"><li>Third-Party Services</li></a>
+          <a href="/docs/cookies"><li>Cookies We Use</li></a>
+        </ul></details
+      >
+      <hr />
+      <h3>
+        <a href="https://opensource.org/licenses/MIT">Copyright</a> @DerDer56
+        <span id="year">....</span>
+      </h3>
+    </footer>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url = /js" />
+    </noscript>
+  </body>
+</html>

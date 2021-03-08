@@ -1,0 +1,12 @@
+#pre {
+  overflow-x: hidden;
+  min-height: 300px;
+  position: relative;
+  word-break:break-word;
+}
+#code {
+  display: inline-block;
+  overflow-x: break;
+  position: relative;
+  padding:1px;
+}

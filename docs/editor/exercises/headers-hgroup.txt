@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://declass.netlify.app/css/declass.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>
+          Hi!
+        </h1>
+        <h2>
+          I'm a header without a ton of padding.
+        </h2>
+      </hgroup>
+    </header>
+  </body>
+</html>
+<!-- This is an example of Declass -->

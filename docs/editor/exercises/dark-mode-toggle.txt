@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://declass.netlify.app/css/declass.min.css"
+    />
+    <script src="https://declass.netlify.app/js/toggle.js" defer></script>
+  </head>
+  <body>
+    I now have Declass Toggle! Yay!
+  </body>
+</html>
+<!-- This is an example of Declass -->

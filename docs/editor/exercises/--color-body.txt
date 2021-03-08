@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://declass.netlify.app/css/declass.min.css"
+    />
+  </head>
+  <body style="--color: red">
+    <div>
+      <h1>
+        Hi!
+      </h1>
+      <p>
+        I inherit the specified color
+      </p>
+    </div>
+  </body>
+</html>
+<!-- This is an example of Declass -->
