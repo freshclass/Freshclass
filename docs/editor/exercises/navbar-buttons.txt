@@ -22,4 +22,4 @@
     </nav>
   </body>
 </html>
-<!-- This is an example of Declass -->
+<!-- This is an example of Freshclass -->
